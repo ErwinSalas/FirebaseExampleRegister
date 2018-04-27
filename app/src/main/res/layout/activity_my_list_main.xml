@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amendez.lab1myapplication.Lab1MainActivity">
+
+    <TableLayout
+        android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1">
+        <TableRow android:layout_gravity="center">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Nombre" />
+            <EditText android:id="@+id/name"
+
+                />
+
+
+        </TableRow>
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginStart="10dp"/>
+            <EditText android:id="@+id/email"
+             />
+
+        </TableRow>
+        <TableRow >
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/photoButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Photo"
+                />
+            <Button
+                android:id="@+id/save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+
+    </TableLayout>
+    <ListView android:id="@+id/restaurants"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/details"/>
+
+</RelativeLayout>
